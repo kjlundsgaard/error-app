@@ -6,9 +6,7 @@
   <!-- <script src="jquery.js"></script> -->
   <script src="https://cdn.ravenjs.com/3.14.0/raven.min.js" crossorigin="anonymous"></script>
 
-  <script>Raven.config('http://328b8203b92d436c8a85f8b1bfbc29c8@localhost:8000/15', {
-            release: 'v1.1',
-          }).install()
+  <script>Raven.config('http://328b8203b92d436c8a85f8b1bfbc29c8@localhost:8000/15').install()
   </script>
   <script>
   // try {
@@ -16,7 +14,7 @@
   //   } catch(e) {
   //       Raven.captureException(e)
   //   }
-    throw new Error('Error');
+    throw new Error('A whole new error');
   </script>
 
 
